@@ -25,17 +25,6 @@ html, body {
         top: 0;
         left: 0;
     }
-    .andromeda-header-text {
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
-        padding-left: 0.5em;
-        a {
-            text-decoration: none;
-            color: $andromeda-light;
-            font-family: "Montserrat";
-            font-weight: 800;
-        }
-        }
     span {
         width: 75%;
         margin-left: 1em;
@@ -115,7 +104,7 @@ html, body {
             text-transform: uppercase;
         }
         span {
-            font-family: "Handlee";
+            font-family: "Montserrat";
             color: $andromeda-light;
         }
         .post-text {
@@ -215,6 +204,7 @@ a.stretched {
         padding-top: 0.5em;
         padding-bottom: 0.5em;
         padding-left: 0.5em;
+        font-family: "Montserrat";
         a {
             text-decoration: none;
             color: $andromeda-light;
@@ -237,6 +227,7 @@ a.stretched {
         padding-top: 0.5em;
         padding-bottom: 0.5em;
         padding-left: 0.5em;
+        font-family: "Montserrat";
         a {
             text-decoration: none;
             color: $andromeda-light;
@@ -259,6 +250,7 @@ a.stretched {
         padding-top: 0.5em;
         padding-bottom: 0.5em;
         padding-left: 0.5em;
+        font-family: "Montserrat";
         a {
             text-decoration: none;
             color: $andromeda-light;
