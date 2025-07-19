@@ -1,0 +1,211 @@
+// Import fonts and colors
+@import 'colors';
+$desktop-width: 60%;
+$mobile-width: 80%;
+
+// Header image styling
+.header-image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $andromeda-dark;
+}
+.header-image {
+    width: 100%;
+    height: 100vh;
+    background-size: cover !important;
+    background-position-y: center !important;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    filter: brightness(50%);
+    filter: blur(2px);
+}
+
+.background-container {
+    width: 100%;
+    height: 100%;
+    background-image: url('ibdb_collage_r.jpg'); /* Replace with your image URL */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;    
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.andromeda-header-text {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    a {
+        text-decoration: none;
+        color: $andromeda-light;
+        font-family: "Montserrat";
+        font-weight: 800;
+    }
+}
+.text-container {
+    margin-top: 40vh;
+    text-align: center;    
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.page-title {
+    padding: 20px;
+    border-radius: 12px;   
+    background-color: #580587;
+    text-align: center;
+    border: 3px solid yellow; 
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
+
+// Body setup - body text in center blocks, images are full width
+p {
+    margin: 0;
+    padding: 0.5em;
+}
+.body-container {
+    position: relative;
+    text-align: left;
+    margin-top: 3em;
+    * {
+        max-width: 100%;
+    }
+    *[data-loaded="true"] {
+        animation-name: showLazy;
+        animation-duration: 0.6s;
+        animation-fill-mode: both;
+    }
+    @keyframes showLazy { from { opacity: 0; } to { opacity: 1; } }
+    p, h1, h2, h3, h4 {
+        width: $desktop-width;
+        margin: 0 auto !important;
+        text-align: left;
+    }
+    ul, ol {
+        width: $desktop-width;
+        margin: 0 auto !important;
+        margin: 0.5em;
+        padding-top: 0.5em;
+        padding-bottom: 0.25em;
+        ul {
+            width: 100%;
+        }
+    }
+    li {
+        padding-bottom: 0.25em;
+    }
+    iframe {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 0.5em;
+    }
+    hr {
+        width: 40%;
+        margin: 0 auto !important;
+        color: gray;
+        margin-top: 1em !important;
+        margin-bottom: 1em !important;
+    }
+    h1, h2, h3, h4 {
+        text-transform: uppercase;
+    }
+    p {
+        line-height: 1.5em;
+    }
+    h1 {
+        padding-bottom: 1em;
+        padding-top: 1.5em;
+    }
+    h2, h3, h4 {
+        padding-top: 1.5em;
+        padding-bottom: 0.75em;
+    }
+    a {
+        text-decoration: none;
+        color: rgb(69, 69, 255);
+    }
+    a:hover {
+        color: rgb(42, 42, 167);
+    }
+    blockquote {
+        font-style: italic;
+        padding-left: 2em; 
+        padding-top: em;
+        padding-bottom: 0.5em;
+        margin-top: 1em !important;
+        margin-bottom: 1em !important;
+        width: $desktop-width;
+        margin: 0 auto;
+        p {
+            width: 100%;
+        }
+    }
+    pre {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        margin: 0 auto;
+    }
+}
+
+// Gallery customization
+.gallery {
+    width: $desktop-width;
+    margin: 0 auto;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
+.nGY2GThumbnail {
+    filter: brightness(90%);
+    transition: 0.5s;
+}
+.nGY2GThumbnail:hover {
+    filter: brightness(100%);
+}
+
+iframe {
+    max-width: 60% !important;
+}
+
+// Mobile styling
+@media only screen and (min-width: 900px) {
+   
+    iframe {
+        max-width: $desktop-width !important;
+    }
+    .page-title {
+        font-size: 3.0em;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 899px)  {
+
+    iframe {
+        max-width: $mobile-width !important;
+    }
+    .page-title {
+        font-size: 2.0em;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 399px) {
+
+    iframe {
+        max-width: $mobile-width !important;
+    }
+    .page-title {
+        font-size: 1.0em;
+    }
+}

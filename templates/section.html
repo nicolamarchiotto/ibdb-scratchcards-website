@@ -1,0 +1,22 @@
+{% import "macros.html" as macros %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    {{ macros::head() }}
+
+    <body>
+        <div id="index-header">
+            <canvas id="stars"></canvas>
+            <h1 class="andromeda-header-text">
+                <a href="{{ config.base_url }}">{{ config.title }}</a>
+            </h1>
+            <div style="text-align: center;">
+                <img src="/boromir.jpg" style="max-width: 100%; height: auto;"/>
+            </div>
+        </div>
+        <div class="content">
+            
+        </div>
+    </body>
+</html>
