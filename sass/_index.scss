@@ -1,9 +1,12 @@
 @import 'colors';
+$desktop-width: 60%;
+$mobile-width: 80%;
 
 // HTML fix for large screens
 
 html, body {
     min-height: 100vh;
+    background-color: $andromeda-dark;
 }
 
 // Eventually, let's make this a canvas element with some fancy text. For now, contrasty.
@@ -195,5 +198,45 @@ a.stretched {
                 display: none;
             }
         }
+    }
+}
+
+// Mobile styling
+@media only screen and (min-width: 900px) {
+   
+    iframe {
+        max-width: $desktop-width !important;
+    }
+    .page-title {
+        font-size: 3.0em;
+    }
+    .andromeda-header-text {
+        font-size: 3.0em;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 899px)  {
+
+    iframe {
+        max-width: $mobile-width !important;
+    }
+    .page-title {
+        font-size: 2.0em;
+    }
+    .andromeda-header-text {
+        font-size: 2.0em;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 399px) {
+
+    iframe {
+        max-width: $mobile-width !important;
+    }
+    .page-title {
+        font-size: 1.0em;
+    }
+    .andromeda-header-text {
+        font-size: 1.0em;
     }
 }
