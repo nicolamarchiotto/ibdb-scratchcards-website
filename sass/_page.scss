@@ -190,6 +190,15 @@ iframe {
     }
     .andromeda-header-text {
         font-size: 3.0em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 0.5em;
+        a {
+            text-decoration: none;
+            color: $andromeda-light;
+            font-family: "Montserrat";
+            font-weight: 800;
+        }
     }
 }
 
@@ -203,6 +212,15 @@ iframe {
     }
     .andromeda-header-text {
         font-size: 2.0em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 0.5em;
+        a {
+            text-decoration: none;
+            color: $andromeda-light;
+            font-family: "Montserrat";
+            font-weight: 800;
+        }
     }
 }
 
@@ -216,5 +234,14 @@ iframe {
     }
     .andromeda-header-text {
         font-size: 1.0em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 0.5em;
+        a {
+            text-decoration: none;
+            color: $andromeda-light;
+            font-family: "Montserrat";
+            font-weight: 800;
+        }
     }
 }
